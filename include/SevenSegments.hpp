@@ -6,7 +6,7 @@ class Segment
 	public:
 		Segment(float posX, float posY, int width, int height);
 		void Draw();
-		void changeState();
+		void changeState(int value);
 		float getPosX();
 		float getPosY();
 		~Segment();

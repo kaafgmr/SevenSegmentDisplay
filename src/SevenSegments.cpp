@@ -12,12 +12,12 @@ Segment::Segment(float posX, float posY, int width, int height)
 
 void Segment::Draw()
 {
-	NOE_DibujaCaja(x, y, w, h, 255 * state, 255 * state, 255 * state);
+	NOE_DibujaCaja(x, y, w, h, 255 * state, 0, 0);
 }
 
-void Segment::changeState()
+void Segment::changeState(int value)
 {
-	state = state == 0 ? 1 : 0;
+	state = value;
 }
 
 float Segment::getPosX()
